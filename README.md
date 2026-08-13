@@ -1,17 +1,19 @@
 # Lumen
 
-**Personal Knowledge Synthesizer**
+**Personal Knowledge Synthesizer** — v0.2
 
-Drop in links, notes, or raw thoughts. Receive a concise, citation-backed brief with reliability scores and contradiction flags.
+Drop in links, notes, or raw thoughts. Lumen fetches the content, extracts key claims, scores source reliability, flags tensions, and produces a clean, exportable brief.
 
 ## Features
 
-- Dark, minimal, keyboard-driven interface
-- Local-first storage (history in browser localStorage)
-- Source reliability scoring
-- Contradiction flags
-- Export to Markdown or print/PDF
-- ⌘/Ctrl + Enter to synthesize
+- **Real URL fetching** (server-side) with timeouts and graceful failure handling
+- Claim extraction from retrieved content + your notes
+- Reliability scoring based on fetch success and content richness
+- Contradiction / tension flags
+- Local-first history (browser localStorage)
+- Keyboard-driven (`⌘ / Ctrl + Enter`)
+- Export to Markdown or Print/PDF
+- Dark, minimal interface
 
 ## Quick start
 
@@ -24,6 +26,6 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Deploy
 
-This project is ready for Vercel. The synthesis engine in this MVP is a structured mock that produces realistic briefs; a production version would wire real retrieval + LLM synthesis behind an API route.
+Ready for Vercel. Connect this repository and deploy.
 
-Built with Next.js, Tailwind CSS, and a focus on clarity.
+Built with Next.js App Router, Server Actions, and Tailwind CSS.

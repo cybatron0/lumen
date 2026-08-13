@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lumen — Personal Knowledge Synthesizer",
   description:
-    "Drop in links, notes or thoughts. Receive a concise, citation-backed brief with reliability scores and contradiction flags.",
+    "Drop in links, notes or thoughts. Lumen fetches content, extracts claims, scores reliability, and produces a grounded brief.",
   keywords: ["knowledge", "research", "synthesis", "brief", "notes"],
 };
 
